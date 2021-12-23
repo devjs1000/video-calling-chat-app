@@ -1,0 +1,22 @@
+::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Times New Roman", Times, serif;
+}
+.videoCallContainer {
+  min-width: 80vw;
+  min-height: 20rem;
+  position: fixed;
+  left: 10vw;
+  top: 15vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+video {
+  border-radius: 1rem;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+}
