@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 export default function VideoFrame({ socket }) {
   const [videos, setVideos] = useState([]);
-  const [refs, setRefs] = useState([useRef(), useRef(), useRef()]);
   const vidRef = useRef();
   const vidRef2 = useRef();
 
@@ -41,11 +40,11 @@ export default function VideoFrame({ socket }) {
               <video
                 key={Math.random() * 100}
                 autoPlay={true}
-                ref={ref2}
+                ref={vidRef2}
               ></video>,
             ]);
 
-            ref2.current.srcObject = userStream;
+            vidRef2.current.srcObject = userStream;
             console.log(videos);
           });
         });
